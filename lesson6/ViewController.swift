@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         tf.isSecureTextEntry = true
         tf.placeholder = "Enter a password"
         tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.tag = 0
         let rigthView = UIButton(frame: CGRect(x: 0, y: 0, width: 24, height: 20))
         rigthView.setBackgroundImage(UIImage(systemName: "eye"), for: .normal)
         rigthView.tag = 0
@@ -30,7 +29,6 @@ class ViewController: UIViewController {
         tf.isSecureTextEntry = true
         tf.placeholder = "Confirm the password"
         tf.translatesAutoresizingMaskIntoConstraints = false
-        tf.tag = 1
         let rigthView = UIButton(frame: CGRect(x: 0, y: 0, width: 24, height: 20))
         rigthView.setBackgroundImage(UIImage(systemName: "eye"), for: .normal)
         rigthView.tag = 1
@@ -55,6 +53,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        print("new changes")
         
         view.addSubview(createPasswordTF)
         
